@@ -24,14 +24,14 @@ const path = {
         fonts: distPath + "assets/fonts/"
     },
     src: {
-        html: srcPath + "*.html",
+        html: "index.html",
         css: srcPath + "assets/scss/*.scss",
         js: srcPath + "assets/js/*.js",
         img: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
     watch: {
-        html:   srcPath + "**/*.html",
+        html:   "index.html",
         js:     srcPath + "assets/js/**/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
         img: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
@@ -51,7 +51,7 @@ function serve() {
 
 
 function html() {
-    return src(path.src.html, {base: srcPath})
+    return src(path.src.html, {base: './'})
         .pipe(dest(path.build.html))
         .pipe(browserSync.stream());
 }

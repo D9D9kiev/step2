@@ -1,0 +1,112 @@
+.header {
+    width: 100%;
+    margin-bottom: 129px;
+   padding-bottom: 460px;
+    background-image: url(/assets/img/firs1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 15px;
+position: relative;
+}
+
+.menu-container {
+       display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 90px;
+    color:$color-primary;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+        color: $color-secondary;
+    }
+}
+.icon {
+    width: 43px;
+    height: 41px;
+    // fill: $color-primary;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.header-item {
+    &:hover {
+        color: $color-secondary;
+    }
+    &:last-child {
+        padding: 10px 20px;
+        color: $color-secondary;
+        background-color: $color-primary;
+        border-radius: 40px;
+        &:hover {
+            color:$color-primary;
+        background-color:$color-secondary;
+        }
+    }
+}
+
+.first-fiew {
+    margin-top: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ 
+    h2 {
+        
+       color:$color-secondary;
+       font-size: 82px;
+    line-height: 82px; 
+    }
+    p{font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        color: $color-primary;
+    }
+    span {
+        color:$color-description;
+        font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+    }
+}
+
+
+.btn-wrapp {
+    position: absolute;
+    bottom:-25px;
+    padding: 23px 61px;
+    color:$color-secondary;
+    background-color: $color-primary;
+    border-radius: 40px;
+    &:hover {
+        cursor: pointer;
+        color:$color-primary;
+    background-color:$color-secondary;
+    }
+}
+
+.btn-description {
+position: absolute;
+bottom: -50px;
+    font-weight: 400;
+font-size: 14px;
+line-height: 15px;
+    color: $color-description;
+}
