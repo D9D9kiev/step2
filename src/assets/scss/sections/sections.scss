@@ -1,0 +1,36 @@
+@import './header';
+@import './first';
+@import './posts';
+@import './instagram';
+@import './footer';
+
+
+.wrapper {
+    @include flex-centr;
+}
+
+.container {
+    // width: 1170px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
