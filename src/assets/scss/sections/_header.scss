@@ -12,6 +12,7 @@
     font-size: 16px;
     line-height: 15px;
     position: relative;
+   
 }
 
 .header-nav-container {
@@ -34,7 +35,7 @@
         right: 30px;
      }
      @media  (max-width:600px) {
-        right: 0px;
+        right:  -110px;
      }
 }
 
@@ -46,10 +47,12 @@
     align-items: center;
     padding: 30px 90px;
     color:$color-primary;
+    padding-left: 10px;
+    padding-right: 10px;
     @media screen and (max-width:992px) {
         background: #27262A; 
     }
-    @media screen and (max-width:451px) {
+    @media screen and (max-width:480px) {
         justify-content: flex-start; 
     }
 }
@@ -57,6 +60,7 @@
 .logo {
     display: flex;
     align-items: center;
+
     h1 {
         text-transform: uppercase;
       
@@ -64,11 +68,15 @@
         cursor: pointer;
         color: $color-secondary;
     }
-    @media  (max-width:451px) {
+    @media  (max-width:480px) {
         display: none; 
+        margin-right: 50px;
     }
     }
-    
+    @media  (max-width:480px) {
+      
+        margin-right: 50px;
+    }
     
 }
 .icon {
@@ -92,8 +100,15 @@
             font-size: 14px;
         }
     }
+    @media  (max-width:600px) {
+        &:last-child {
+            font-size: 12px;
+        gap: 15px; 
+        }
+       
+    }
 
-    @media  (max-width:481px) {
+    @media  (max-width:480px) {
         display: none;
 
            }
@@ -112,12 +127,15 @@
     background-color: $color-primary;
     border-radius: 40px;
     &:hover {
+        cursor: pointer;
         color:$color-primary;
     background-color:$color-secondary;
     }
 }
 .first-fiew {
     margin-top: 84px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +147,7 @@
        color:$color-secondary;
        font-size: 82px;
     line-height: 82px; 
-    @media screen and (max-width:451px) {
+    @media screen and (max-width:480px) {
        font-size: 48px; 
        line-height: 48px;
     }
@@ -139,8 +157,9 @@
         font-weight: 400;
         font-size: 30px;
         line-height: 30px;
+        text-align: center;
         color: $color-primary;
-        @media screen and (max-width:451px) {
+        @media screen and (max-width:480px) {
             font-size: 24px; 
          }
     }
@@ -149,7 +168,7 @@
         font-weight: 400;
 font-size: 16px;
 line-height: 16px;
-@media screen and (max-width:451px) {
+@media screen and (max-width:480px) {
     font-size: 14px; 
  }
     }
@@ -180,8 +199,8 @@ line-height: 15px;
 }
 .hamburger {
     position: absolute;
-    top: 0;
-    right: 2%;
+    top: 26px;
+    right: 10px;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -193,7 +212,7 @@ line-height: 15px;
     user-select: none;
     z-index: 2;
    
-    @media (max-width: 481px) {
+    @media (max-width: 480px) {
         display: flex;
     }
   }
@@ -210,7 +229,7 @@ display: none;
     font-weight: 400;
 font-size: 26px;
 line-height: 26px;
-    padding: 29px 0 29px 40px; 
+    padding: 29px 50px 29px 40px; 
     border-bottom: 3px solid #3B3B3B;
     // position: relative;
    
@@ -225,16 +244,17 @@ line-height: 26px;
     }
 }
 .hamburger-nav.active {
-    // position: absolute;
-    top: 47px;
-    right: 2%;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    right: 0;
     display: block;
     // background-color: #F5F5F5;
      animation: fade .5s;
   }
 .line {
     width: 26px;
-    height: 3px;
+    height: 23px;
     background-color: #fff;
     margin: 6px 0;
     transition: all 0.3s ease-in-out;
@@ -244,7 +264,9 @@ line-height: 26px;
   }
   
   .hamburger.open .line1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
+    width: 40px;
+    height: 23px;
+    transform: rotate(-45deg) translate(-16px, 16px);
   }
   
   .hamburger.open .line2 {
@@ -252,6 +274,8 @@ line-height: 26px;
   }
   
   .hamburger.open .line3 {
+    width: 40px;
+    height: 23px;
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
