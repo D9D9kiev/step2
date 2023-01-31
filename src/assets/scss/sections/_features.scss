@@ -2,16 +2,20 @@
   
     width: 100%;
     padding-top: 100px;
-    background: #F4F4F4;
+    background: $color-bg;
 }
 
 .features-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
    
     gap: 54px;
+    @media (max-width:992px) {
+        flex-direction: column;
+        position: relative;
+     }
 }
 
 .features-result {
@@ -20,12 +24,30 @@
         font-size: 48px;
         line-height: 50px;
         color:$color-primary;
+        @media  (max-width:992px) {
+            position: absolute;
+            top: -50px;
+            left: 20%;
+          }
+          @media screen and (max-width:451px) {
+            top: -60px;
+            left: 10px;
+            font-size: 32px;
+            line-height: 38px;;
+             }
     }
+    @media  (max-width:992px) {
+        text-align: right;
+      }
 }
 
 .features-result-img {
-    width: 700px;
+    max-width: 700px;
 height: 519px;
+@media screen and (max-width:451px) {
+    max-width: 420px;
+    height: 380px;
+     }
 }
 
 .features-items {
@@ -40,12 +62,18 @@ height: 519px;
    
     display: flex;
     align-items: center;
+    @media screen and (max-width:451px) {
+     flex-direction: column;
+      }
     
    
 }
 .features-item-text {
-    width: 400px;
+    max-width: 400px;
     margin-left: 20px;
+    @media  (max-width:992px) {
+       max-width: 100%;
+     }
     h5 {
         font-weight: 400;
         font-size: 16px;
@@ -56,16 +84,20 @@ height: 519px;
         font-size: 14px;
         color: $color-description; 
     }
+  
+
 }
 
 .features-item-img {
-    width: 100px;
+    width: 200px;
     height: 100px;
     background-image: url(/assets/img/icon1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    
+    @media  (max-width:992px) {
+        width: 100px;
+      }
 
 }
 
