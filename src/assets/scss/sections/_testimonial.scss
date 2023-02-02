@@ -1,7 +1,6 @@
-*{
-//background-color: rebeccapurple;
+body{
+  background: #4B3B4E
 }
-
 .testimonials {
   width: 100%;
   height: 100%;
@@ -37,18 +36,21 @@
   }
 
 .description{
-  max-width: 1200px;
+  //max-width: 1200px;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: 0 auto;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px 70px;
-  padding: 10px;
+  //padding: 10px;
   @media (max-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
   @media (max-width: 481px) {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
 }
@@ -57,15 +59,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   gap: 28px;
   @media (max-width: 993px) {
     margin-top: 82px;
-
+  }
+  @media (max-width: 481px) {
+    margin-top: 41px;
   }
 }
+.logo-items{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .item-desc{
-  height: 20px;
+  height: 100%;
   font-family: 'Lato',sans-serif;
   font-style: italic;
   font-weight: 700;
@@ -123,6 +134,7 @@ img{
   font-size: 48px;
   font-weight: 700;
   line-height: 44px;
+  margin-bottom: 50px;
 color: $color-secondary;
   @media (max-width:993px){
     h2{
@@ -141,20 +153,28 @@ color: $color-secondary;
 .containers{
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: center;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 15px;
+  grid-template-columns: repeat(4,auto);
+  column-gap: 15px;
   padding: 10px;
+  @media (max-width: 1140px) {
+    display: flex;
+    padding: 10px;
+  }
   @media (max-width: 992px) {
-    grid-template-columns: 257px 257px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
     justify-content: center;
   gap: 25px}
-  @media (max-width: 560px) {
-    grid-template-columns: 220px 220px;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
   }
   @media (max-width: 481px) {
-    grid-template-columns: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (max-width: 320px) {
@@ -163,13 +183,31 @@ color: $color-secondary;
 }
 .tabs{
   font-family: Montserrat, sans-serif;
+  width: 257px;
   height: 457px;
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 150px;
+  &__1{
+    margin-top: -50px;
+    width: 299px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 600px){
+      width: 230px;
+  }
+    @media (max-width: 481px) {
+      width: 299px;}}
   @media (max-width: 992px) {
     margin-bottom: 71px;}
+  @media (max-width: 600px){
+    width: 215px;
+  }
+  @media (max-width: 481px) {
+    width: 257px;}
   @media (max-width: 320px) {
     margin-bottom: 65px;
 
@@ -188,6 +226,21 @@ color: $color-secondary;
   justify-content: center;
   height: 97px;
   color:$color-secondary;
+  &__3{
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    background: rgba(70, 48, 72, 1);
+    font-weight: 400;
+    line-height: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 97px;
+    color:$color-secondary;
+  }
   @media (max-width: 320px) {
     padding: 36px 27px;
   }
@@ -199,6 +252,15 @@ color: $color-secondary;
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__3{
+    font-family: Montserrat, sans-serif;
+    margin-top: 30px;
+    font-size: 82px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .tabSpan{
   margin-top: 20px;
@@ -216,6 +278,16 @@ color: $color-secondary;
   text-align: center;
   background: rgba(255, 255, 255, 0.11);
   color: $color-secondary;
+  &__3{
+    width: 100%;
+    height: 463px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(70, 48, 72, 0.64);
+    color: $color-secondary;
+  }
 }
 .tab-options{
   height: 20px;
@@ -224,6 +296,15 @@ color: $color-secondary;
   font-weight: 400;
   line-height: 18px;
   text-align: center;
+  &__3{
+    font-family: Montserrat, sans-serif;
+    height: 20px;
+    margin-top: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 .pricing-btn{
   margin-top: 50px;
@@ -235,15 +316,23 @@ color: $color-secondary;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.15);
   margin-bottom: 28px;
+  &__3{
+    font-family: Montserrat, sans-serif;
+    margin-top: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 52px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-bottom: 28px;
+  }
 
 }
 .tabs-button{
   background: none;
   font-size: 16px;
   text-transform: uppercase;
-}
-.tabs:hover {
-  background: rgba(70, 48, 72, 0.84);
-  scale: 1.1;
 }
 
