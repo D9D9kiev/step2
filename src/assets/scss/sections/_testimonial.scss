@@ -1,9 +1,12 @@
-body{
-  background: #4B3B4E
+.section-wrapper {
+  background: #4B3B4E;
 }
+
+
 .testimonials {
   width: 100%;
   height: 100%;
+
   background-image: url('../img/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,6 +21,7 @@ body{
   display: flex;
   justify-content: center;
   font-size: 48px;
+  line-height: 50px;
   color:$color-secondary;
 
   @media (max-width:993px){
@@ -114,7 +118,7 @@ body{
   font-size: 14px;
   line-height: 21px;
 }
-img{
+.img__testimonial{
   margin-top: 18px;
   max-width: 100%;
 }
