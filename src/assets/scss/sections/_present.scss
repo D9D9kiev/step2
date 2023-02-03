@@ -1,0 +1,96 @@
+.present {
+    margin-top: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.present-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    h2{
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 54px;
+        color: #635C73;
+        text-transform: uppercase;
+        text-align: center;
+        @media screen and (max-width:480px) {
+            font-size: 26px;
+            line-height: 28px;
+         }
+    }
+}
+
+.present-text {
+    text-align: center;
+    margin: 24px 0;
+    p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        color: #323232;
+        @media screen and (max-width:480px) {
+            font-size: 14px;
+            line-height: 20px;
+         }
+    }
+}
+
+.icons {
+    display: flex;
+    margin-bottom: 70px;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 20px;
+    @media screen and (max-width:480px) {
+       flex-wrap: wrap;
+       justify-content: center;
+       row-gap: 20px;
+     }
+}
+
+.icons-item {
+    display:flex ;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid;
+    border-radius: 6px;
+  
+}
+
+.svg-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    background-color: $color-bg;
+    padding: 3px 12px;
+    border-right: 1px solid;
+    
+    p{
+        margin-left: 5px;
+        font-family: 'Montserrat', sans-serif;
+     
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+}
+
+.icon-git {
+    width: 16px;
+    height: 16px;
+}
+
+.count {
+    padding: 3px;
+}
+    
+    // border: 1px solid;

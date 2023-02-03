@@ -1,0 +1,37 @@
+@import './header';
+@import './present';
+@import './features';
+@import "testimonial";
+
+
+.wrapper {
+overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.section-title { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+ 
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+   
+}
+
