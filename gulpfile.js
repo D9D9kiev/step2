@@ -101,7 +101,7 @@ function clean() {
   return del(path.clean);
 }
 function deploy() {
-  return gulp.src("./dist/**/*").pipe(ghPages());
+  return gulp.src("./**/*").pipe(ghPages());
 }
 
 function watchFiles() {
