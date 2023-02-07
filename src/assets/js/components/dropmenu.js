@@ -16,10 +16,10 @@ hamburger.addEventListener('click', e => {
 });
 
 document.addEventListener('click', e => {
-  let target = e.target;
-  let its_menu = target == hamburgerNav || hamburgerNav.contains(target);
-  let its_hamburger = target == hamburger;
-  let menu_is_active = hamburgerNav.classList.contains('active');
+  const target = e.target;
+  const its_menu = target == hamburgerNav || hamburgerNav.contains(target);
+  const its_hamburger = target == hamburger;
+  const menu_is_active = hamburgerNav.classList.contains('active');
   
   if (!its_menu && !its_hamburger && menu_is_active) {
     toggleMenu();
