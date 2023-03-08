@@ -8,14 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/Albina11/gulp.git"
+    "url": "git+https://gitlab.com"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/Albina11/gulp/issues"
-  },
-  "homepage": "https://gitlab.com/Albina11/gulp#readme",
   "devDependencies": {
     "browser-sync": "^2.27.11",
     "del": "6.0.0",

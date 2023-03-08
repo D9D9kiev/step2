@@ -5,292 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header container">
-            <div class="menu-container container">
-                <div class="logo">
-                    <img src="./assets/img/Logo1.png" alt="" class="logo-img">
-                    <img src="./assets/img/logo-hover1.png" alt="" class="logo-hover-img">
-                    <h1>ForkIO</h1>  
-                </div>
-               
-                <div class="header-nav-container">
-                    <div class="header-nav">
-                        <ul class="header-menu">
-                            <li class="header-item" >
-                                <a href="#" class="header-items-link">
-                                    Overview
-                                </a> 
-                            </li>
-                            <li class="header-item" >
-                                <a href="#" class="header-items-link">
-                                    About Fork
-                                </a> 
-                            </li>
-                            <li class="header-item" >
-                                <a href="#" class="header-items-link">
-                                    Buying Options
-                                </a> 
-                            </li>
-                            <li class="header-item" >
-                                <a href="#" class="header-items-link">
-                                    Support
-                                </a> 
-                            </li>
-               
-                        </ul>
-                    </div>
-                    <div class="btn-buy">
-                        <div class="btn">
-                            Buy Now
-                       </div>
-                </div>
-                </div>
-                <div class="hamburger">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                  </div>
-                  <div class="hamburger-nav">
-                    <ul class="hamburger-nav__nav-items">
-                        <li class="hamburger-nav-item">
-                            <a href="#" class="nav-link"> Overview </a>
-                        </li>
-                        <li class="hamburger-nav-item">
-                            <a href="#" class="nav-link">About Fork </a>
-                        </li>
-                        <li class="hamburger-nav-item">
-                            <a href="#" class="nav-link"> Buying Options </a>
-                        </li>
-                        <li class="hamburger-nav-item">
-                            <a href="#" class="nav-link"> Support </a>
-                        </li>
-                    </ul>
-                  </div>
-        </div>
-            <div class="first-fiew">
-                <h2>Fork App</h2>
-                <p>A real gamechanger in the world of web development</p>
-                <span>v. 2.8 For Mac and Windows</span>
-                <div class="btn-wrapp">
-                     <div class="btn">
-                        Download For Free Now
-                    </div>
-                    
-                </div>
-                <div class="btn-description">
-                    Unlimited 30-Days Trial Period
-                </div>
+<div class="container">
+    <div class="navbar">
+        <div class="logo"><img src="./assets/img/VHC.png" alt=""></div>
+        <button class="login-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вхід</button>
+    </div>
+
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content ">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./assets/img/loginlogo.png" alt="">
             </div>
-        </header>
-        <main class="main ">
-            <section class="present ">
-                <div class="present-container">
-                    <h2> Revolutionary editor</h2>
-                    <div class="present-text">
-                        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. <br>
-                            Sed id metus id quam auctor molestie eget ut augue.</p>
-                    </div>
-                    <div class="icons">
 
-                        <div class="icons-item">
-                            <div class="svg-container">
-                                   <svg width="0" height="0" class="hidden">
-                            <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="eye">
-                              <path d="M12 4.62158C9.55805 4.62277 7.16659 5.31669 5.10332 6.62274C3.04005 7.9288 1.38963 9.7934 0.34375 12C1.38867 14.2073 3.03887 16.0725 5.10235 17.3787C7.16584 18.6849 9.5578 19.3784 12 19.3784C14.4421 19.3784 16.8341 18.6849 18.8975 17.3787C20.961 16.0725 22.6112 14.2073 23.6562 12C22.6103 9.7934 20.9599 7.9288 18.8966 6.62274C16.8333 5.31669 14.4419 4.62277 12 4.62158ZM12 17.3783C10.103 17.3702 8.24056 16.8704 6.59437 15.9278C4.94818 14.9852 3.57449 13.6319 2.60735 12C3.56832 10.3626 4.94065 9.00484 6.58822 8.06141C8.2358 7.11799 10.1014 6.62167 12 6.62167C13.8985 6.62167 15.7641 7.11799 17.4117 8.06141C19.0593 9.00484 20.4316 10.3626 21.3925 12C20.4254 13.6319 19.0517 14.9852 17.4055 15.9278C15.7593 16.8704 13.8969 17.3702 12 17.3783ZM12 8.33578C11.2752 8.33578 10.5668 8.55068 9.96423 8.95331C9.36166 9.35594 8.892 9.92821 8.61467 10.5978C8.33734 11.2673 8.26477 12.004 8.40616 12.7148C8.54754 13.4256 8.89652 14.0785 9.40897 14.591C9.92142 15.1034 10.5743 15.4524 11.2851 15.5938C11.9959 15.7352 12.7326 15.6626 13.4022 15.3853C14.0717 15.1079 14.644 14.6383 15.0466 14.0357C15.4492 13.4331 15.6642 12.7247 15.6642 12C15.6642 11.0282 15.2781 10.0962 14.5909 9.409C13.9038 8.72183 12.9718 8.33578 12 8.33578ZM12 13.6642C11.6708 13.6642 11.349 13.5666 11.0754 13.3837C10.8017 13.2008 10.5884 12.9409 10.4624 12.6368C10.3365 12.3328 10.3035 11.9981 10.3677 11.6753C10.4319 11.3525 10.5904 11.056 10.8232 10.8232C11.0559 10.5905 11.3525 10.432 11.6753 10.3678C11.9981 10.3035 12.3327 10.3365 12.6368 10.4625C12.9409 10.5884 13.2008 10.8017 13.3837 11.0754C13.5665 11.3491 13.6642 11.6708 13.6642 12C13.6636 12.4412 13.4882 12.8642 13.1762 13.1762C12.8642 13.4882 12.4412 13.6637 12 13.6642Z" fill="black"></path>
-                            </symbol>
-                          </svg>
-                          <svg class="icon-git">
-                            <use xlink:href="#eye"></use>
-                          </svg>
-                          <p> Watch</p>
-                            </div>
-                         
-                          <div class="count">
-                            1,397
-                          </div>
-                        </div>
-                        
-                        <div class="icons-item">
-                            <div class="svg-container">
-                                <svg width="0" height="0" class="hidden">
-                                 <symbol  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" id="star">
-                                 <rect width="16" height="16" id="icon-bound" fill="none"></rect>
-                                 <path d="M16,6.204l-5.528-0.803L8,0.392L5.528,5.401L0,6.204l4,3.899l-0.944,5.505L8,13.009l4.944,2.599L12,10.103L16,6.204z"></path>
-                                </symbol>
-                                </svg>
-                                <svg class="icon-git">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <p> Star</p>
-                            </div>
-                         
-                          <div class="count">
-                           21,038
-                          </div>
-                        </div>    
-                          
-                        <div class="icons-item">
-                            <div class="svg-container">
+            <div class="form">
+                <label><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" id="Email" required>
 
-                            <svg width="0" height="0" class="hidden">
-                                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="git-fork">
-                                <path d="M224,68a36,36,0,1,0-44,35.1v.9a16,16,0,0,1-16,16H92a16,16,0,0,1-16-16v-.9a36,36,0,1,0-16,0v.9a32.1,32.1,0,0,0,32,32h28v16.9a36,36,0,1,0,16,0V136h28a32,32,0,0,0,32-32v-.9A36.1,36.1,0,0,0,224,68ZM148,188a20,20,0,1,1-20-20A20.1,20.1,0,0,1,148,188Z"></path>
-                                </symbol>
-                            </svg>
-                            <svg class="icon-git">
-                                <use xlink:href="#git-fork"></use>
-                            </svg>
-                            <p> Fork</p>
-                        </div>
-                     
-                      <div class="count">
-                       4,391
-                      </div>
-                    </div>    
-                    </div>
-                </div>
-            </section>
-            <section class="features container">
-                <div class="features-title-container container">
-                     <div class="features-title">
-                     <p> &lt; Here is what you get 	&gt;  </p>
-                     </div>
-                </div>
-                <div class="features-container">
-                    <div class="features-items">
-                        <div class="features-item">
-                            <div class="features-item-img img1">
-                            </div>
-                            <div class="features-item-text">
-                                <h5> Creatred to Make The Web Better</h5>
-                                <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-                            </div>
-                        </div>
-                        <div class="features-item">
-                            <div class="features-item-img img2">
-                                
-                            </div>
-                            <div class="features-item-text">
-                                <h5> Incredibly Powerful Tool</h5>
-                                <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.  </p>
-                            </div>
-                        </div>
-                        <div class="features-item">
-                            <div class="features-item-img img3">
-                                
-                            </div>
-                           
-                            <div class="features-item-text">
-                                <h5> Experimental Stuff</h5>
-                                <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
-                            </div>
-                        </div>
-                        <div class="features-item">
-                            <div class="features-item-img img4">
-    
-                            </div>
-                          
-                            <div class="features-item-text">
-                                <h5> Creatred to Make The Web Better</h5>
-                                <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
-                            </div>
-                        </div>
-         
-                    </div>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="Password" required>
 
-                    <div class="features-result">
-                        
-                        <img src="./assets/img/editor.png" alt="editor" class="features-result-img">
-                    </div>
-                </div>
-
-                
-            </section>
-            <div class="section-wrapper">
-
-
-            <section class="testimonials">
-        <div class="title">
-            <h2>People Are Talking About Fork</h2>
-        </div>
-
-        <div class="description">
-            <div class="item">
-                <div class="logo-items"><img src="./assets/img/logo/logo1.png" alt="" class="img__testimonial"></div>
-                <p class="item-desc">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p></div>
-            <div class="item">
-                <div class="logo-items"><img src="./assets/img/logo/logo2.png" alt="" class="img__testimonial"></div>
-                <p class="item-desc">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p></div>
-            <div class="item">
-                <div class="logo-items"><img src="./assets/img/logo/logo3.png" alt="" class="img__testimonial"></div>
-                <p class="item-desc">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p></div>
-            <div class="item">
-                <div class="logo-items"><img src="./assets/img/logo/logo4.png" alt="" class="img__testimonial"></div>
-                <p class="item-desc">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p></div>
-            <div class="item">
-                <div class="logo-items"><img src="./assets/img/logo/logo5.png" alt="" class="img__testimonial"></div>
-                <p class="item-desc">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </p></div>
-            <div class="item">
-                <div class="logo-items"><img src="./assets/img/logo/logo6.png" alt="" class="img__testimonial"></div>
-                <p class="item-desc">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum. </p></div>
-        </div>
-        <div class="testimonials-footer">
-            <div><p class="text_section">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></div>
-            <div><img src="./assets/img/string.png" alt="" class="img__testimonial"></div>
-        </div>
-    </section>
-    <section class="pricing">
-
-        <div class="title-pricing">
-            <h2>Fork Subscription Pricing</h2>
-        </div>
-        <div class="containers">
-            <div class="tabs">
-                <div class="tabs-name">Students</div>
-                <div class="tabs-desc">
-                    <div class="value">&#36;29 <span class="tabSpan">per month</span></div>
-                    <div class="tab-string"><img src="./assets/img/string-price.png" alt=""></div>
-                    <div class="tab-options">Personal License</div>
-                    <div class="pricing-btn 1"><a class="tabs-button" href="#">purchase</a></div>
-                </div>
+                <div class="auth"><button class="login" type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me </div>
             </div>
-            <div class="tabs">
-                <div class="tabs-name">Professional</div>
-                <div class="tabs-desc">
-                    <div class="value">&#36;59<span class="tabSpan">per month</span></div>
-                    <div class="tab-string"><img src="./assets/img/string-price.png" alt=""></div>
-                    <div class="tab-options">Professional License<br>Email Support</div>
-                    <div class="pricing-btn"><a class="tabs-button" href="#">purchase</a></div>
-                </div>
-            </div>
-            <div class="tabs__1">
-                <div class="tabs-name__3">Agency</div>
-                <div class="tabs-desc__3">
-                    <div class="value__3">&#36;99<span class="tabSpan">per month</span></div>
-                    <div class="tab-string"><img src="./assets/img/string-price.png" alt=""></div>
-                    <div class="tab-options__3">1-12 Team Members <br>Phone Support</div>
-                    <div class="pricing-btn__3"><a class="tabs-button" href="#">purchase</a></div>
-                </div>
-            </div>
-            <div class="tabs">
-                <div class="tabs-name">Enterprise</div>
-                <div class="tabs-desc">
-                    <div class="value">&#36;159<span class="tabSpan">per month</span></div>
-                    <div class="tab-string"><img src="./assets/img/string-price.png" alt=""></div>
-                    <div class="tab-options">Unlimited Team Members<br>24/ 7 Phone Support</div>
-                    <div class="pricing-btn"><a class="tabs-button" href="#">purchase</a> </div>
-                </div>
-            </div>
-        </div>
 
-    </section>
+            <div class="buttons">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
-        </main>
+        </form>
+    </div>
+</div>
     <script src='./assets/js/main.js'></script>
     </div>
 </body>
